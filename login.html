@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+
+
+    
+   
+    <title>Document</title>
+    <style>
+        #main li{
+list-style-type:none;
+display:inline-block;
+padding:15px;
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <ul id="main">
+        <li><a href="#">Home</a></li>
+        <li><a href="javascript:gotopage('register','');"> Register</a></li>
+        <li><a href="javascript:gotopage('contact','');">Contact</a></li>
+        <li><a href="javascript:gotopage('logout','');"> Logout </a></li>
+        
+
+    </ul>
+
+    <form method="post" onsubmit="loginUser(event);">
+        
+        Email : <input type="email" name="email" id="email"/> <br/>
+        Password : <input type="password" name="password" id="password"/> <br/>
+    
+        <input type="submit" value="login">
+        <input type="reset" value="Clear">
+    </form>
+   
+    
+</body>
+
+<script src="js/config.js"></script>
+<script src="js/function.js"></script>
+<script src="js/crud.js"></script>
+
+
+
+</html>
